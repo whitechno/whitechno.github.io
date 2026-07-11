@@ -8,10 +8,6 @@ Data scientist and ML/AI engineer. I build intelligent systems for data
 processing and analytics — machine learning products, RAG and agentic AI,
 and distributed data infrastructure.
 
-[GitHub](https://github.com/whitechno) ·
-[LinkedIn](https://www.linkedin.com/in/olegwhite/) ·
-[Twitter](https://x.com/Whitechnoleg)
-
 ## Posts
 
 {% assign posts = site.pages
