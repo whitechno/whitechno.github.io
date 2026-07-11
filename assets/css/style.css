@@ -121,3 +121,14 @@ pre {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+.footer-item {
+  white-space: nowrap;
+}
+
+.footer-item svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  margin-right: 0.35em;
+}

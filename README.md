@@ -8,13 +8,16 @@ no JavaScript. Pushing to `main` publishes the site.
 
 ## Adding a post
 
-Create a folder per post, with images alongside:
+Create a folder per post — date path plus a title slug — with images alongside:
 
 ```
-blog/YYYY/MM/DD/
+blog/YYYY/MM/DD/post-title-slug/
 ├── index.md      # front matter: layout: post, title, date
 └── (images/SVGs, referenced by relative path)
 ```
+
+The post's URL is the folder path, e.g.
+`/blog/2026/06/30/vector-databases-summary/`.
 
 Front matter:
 
