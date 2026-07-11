@@ -4,7 +4,7 @@ Personal site and blog of Oleg White ([whitechno](https://github.com/whitechno))
 live at <https://whitechno.github.io/>.
 
 Built with Jekyll on the stock GitHub Pages build — no theme, no plugins,
-no JavaScript. Pushing to `master` publishes the site.
+no JavaScript. Pushing to `main` publishes the site.
 
 ## Adding a post
 

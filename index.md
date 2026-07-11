@@ -10,7 +10,7 @@ and distributed data infrastructure.
 
 [GitHub](https://github.com/whitechno) ·
 [LinkedIn](https://www.linkedin.com/in/olegwhite/) ·
-[Twitter](https://x.com/whitechno)
+[Twitter](https://x.com/Whitechnoleg)
 
 ## Posts
 
