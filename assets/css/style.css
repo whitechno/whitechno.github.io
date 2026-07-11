@@ -1,0 +1,123 @@
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --link: #0b57d0;
+  --border: #e3e3e3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #e4e4e4;
+    --muted: #9d9d9d;
+    --link: #8ab4f8;
+    --border: #2e2e2e;
+  }
+}
+
+body {
+  margin: 0 auto;
+  max-width: 44rem;
+  padding: 1.5rem 1.25rem 3rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  margin: 2rem 0 0.75rem;
+}
+
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.35rem; }
+h3 { font-size: 1.1rem; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Images without an explicit height (e.g. full-width figures) keep their
+   aspect ratio when max-width shrinks them; inline logos with height="NN"
+   are left alone. */
+img:not([height]) {
+  height: auto;
+}
+
+h1 img, h2 img, h3 img {
+  vertical-align: text-bottom;
+}
+
+/* Dark logos vanish on a dark background — give inline logos a light chip. */
+@media (prefers-color-scheme: dark) {
+  h1 img, h2 img, h3 img {
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 1px 2px;
+    box-sizing: content-box;
+  }
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding: 0 0 0 1rem;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+}
+
+code, pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.site-header {
+  margin-bottom: 2rem;
+}
+
+.site-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.post-header h1 {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.post-date {
+  margin-top: 0;
+  color: var(--muted);
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}

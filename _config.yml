@@ -1,1 +1,6 @@
-theme: jekyll-theme-minimal
+title: Oleg White
+description: Personal site and blog of Oleg White (whitechno)
+url: "https://whitechno.github.io"
+markdown: kramdown
+exclude:
+  - README.md
