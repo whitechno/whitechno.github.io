@@ -32,19 +32,5 @@ date: YYYY-MM-DD
 Any page under `blog/` with a `date` appears automatically in the post list
 on the landing page.
 
-## Importing a report from dag-docs-pub
-
-Posts are first written as reports in
-`dag/dag-docs-pub/docs/reports/YYYY/MM/DD/<slug>.md` (setext title, a
-`Month D, YYYY` date line, assets alongside). `_scripts/import_post.py`
-copies and transforms one into a post folder:
-
-```bash
-python3 _scripts/import_post.py 2026/07/01/vector-search-libraries-summary.md \
-  --description "One-sentence description for the meta tag."
-```
-
-It converts the title/date header to front matter, keeps an
-"*Updated ...*" note, copies all sibling assets, and rewrites relative
-cross-report links for the blog tree. Use `--dry-run` to preview and
-`--force` to overwrite. Then review, `git add`, commit, push.
+Site maintenance — design doc, post-import tooling, instructions — lives in
+the separate private repo `whitechno.github.io.dev`.
