@@ -121,7 +121,9 @@ def rewrite_links(body, src_dir, reports_root, slug):
 def first_sentence(body):
     para = body.split("\n\n", 1)[0].replace("\n", " ")
     para = re.sub(r"\[([^]]*)\]\([^)]*\)", r"\1", para)  # strip link targets
-    para = re.sub(r"[*_]{1,2}(\S(?:[^*_]*\S)?)[*_]{1,2}", r"\1", para)  # emphasis
+    para = re.sub(
+        r"[*_]{1,2}([^*_\s](?:[^*_]*[^*_\s])?)[*_]{1,2}", r"\1", para
+    )  # strip emphasis markers
     m = re.match(r".+?[.!?](?=\s|$)", para)
     return (m.group(0) if m else para).strip()
 
