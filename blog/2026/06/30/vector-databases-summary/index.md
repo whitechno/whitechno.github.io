@@ -2,7 +2,7 @@
 layout: post
 title: "15 Vector Databases That Matter in Mid-2026 — A Curated Guide"
 date: 2026-06-30
-description: A critically curated guide to 15 vector databases with verified production adoption, momentum, and developer mindshare as of mid-2026.
+description: "A critically curated guide to 15 vector databases with verified production adoption, momentum, and developer mindshare as of mid-2026."
 ---
 
 *Updated July 10, 2026*
@@ -15,19 +15,17 @@ third-party estimates are labeled as such. Source links follow each entry.
 See the companion
 [_Vector Databases Infographic_](vector-databases-infographic.svg):
 
-<img src="vector-databases-infographic.svg" width="550" alt="">
+<img src="vector-databases-infographic.svg" width="650" alt="">
 
 ANN *libraries* — engines you embed, not databases you run — are covered
-separately: see [_Vector Search Libraries
-Summary_](../../../07/01/vector-search-libraries-summary/) and
-[_Vector Search Libraries
-Infographic_](../../../07/01/vector-search-libraries-summary/vector-search-libraries-infographic.svg)
+separately: see [_Vector Search Libraries Summary_](../../../07/01/vector-search-libraries-summary/)
+and [_Vector Search Libraries Infographic_](../../../07/01/vector-search-libraries-summary/vector-search-libraries-infographic.svg)
 (FAISS, hnswlib, Turbovec, ScaNN, DiskANN, Annoy, Voyager, usearch, NVIDIA
 cuVS).
 
 ---
 
-## 1. <img src="logos/pinecone.svg" height="22" alt=""> Pinecone — Managed · Serverless SaaS
+## 1. <img src="images/pinecone.svg" height="22" alt=""> Pinecone — Managed · Serverless SaaS
 
 [pinecone.io](https://www.pinecone.io/)
 
@@ -53,13 +51,13 @@ vectors, <20ms P50), Melange (patent search).
 · [CustomGPT.ai](https://www.pinecone.io/customers/customgpt-ai/)
 · [2026 release notes](https://docs.pinecone.io/release-notes/2026)
 
-## 2. <img src="logos/turbopuffer.svg" height="22" alt=""> turbopuffer — Serverless · Built on object storage
+## 2. <img src="images/turbopuffer.svg" height="22" alt=""> turbopuffer — Serverless · Built on object storage
 
 [turbopuffer.com](https://turbopuffer.com/)
 
 turbopuffer is a serverless vector + full-text/hybrid search engine built from
-first principles on object storage (S3/GCS) with NVMe/RAM caching, founded by
-Simon Eskildsen (ex-Shopify). The architecture makes huge, mostly cold,
+the first principles on object storage (S3/GCS) with NVMe/RAM caching, founded
+by Simon Eskildsen (ex-Shopify). The architecture makes huge, mostly cold,
 multi-tenant namespace workloads cost roughly one-tenth as much as
 RAM/disk-replica vector DBs while keeping warm queries at sub-10ms p50. It runs
 4T+ documents, 10M+ writes/s, and 25K+ queries/s in production, and reached an
@@ -81,7 +79,7 @@ Grammarly, and Harvey are also listed customers.
 · [AWS Startups](https://aws.amazon.com/startups/learn/how-turbopuffer-is-refactoring-the-economics-of-search)
 · [turbopuffer.com/customers](https://turbopuffer.com/customers)
 
-## 3. <img src="logos/weaviate.svg" height="22" alt=""> Weaviate — Open source · Hybrid search
+## 3. <img src="images/weaviate.svg" height="22" alt=""> Weaviate — Open source · Hybrid search
 
 [weaviate.io](https://weaviate.io/)
 
@@ -107,7 +105,7 @@ for 100+ companies including Docker, OpenAI, and Reddit), Stack AI, Neople.
 · [Stack AI](https://weaviate.io/case-studies/stack-ai)
 · [Weaviate 1.38](https://weaviate.io/blog/weaviate-1-38-release)
 
-## 4. <img src="logos/milvus.svg" height="22" alt=""> Milvus — Open source · Distributed
+## 4. <img src="images/milvus.svg" height="22" alt=""> Milvus — Open source · Distributed
 
 [milvus.io](https://milvus.io/)
 
@@ -132,7 +130,7 @@ PayPal and Airbnb also named among 300+ enterprises.
 · [milvus.io/use-cases](https://milvus.io/use-cases)
 · [Milvus 3.0 beta](https://milvus.io/docs/release_notes.md)
 
-## 5. <img src="logos/qdrant.svg" height="22" alt=""> Qdrant — Open source · Rust engine
+## 5. <img src="images/qdrant.svg" height="22" alt=""> Qdrant — Open source · Rust engine
 
 [qdrant.tech](https://qdrant.tech/)
 
@@ -159,7 +157,7 @@ conversations across 10 countries), HubSpot (Breeze AI retrieval), plus xAI
 · [Series B](https://qdrant.tech/blog/series-b-announcement/)
 · [Qdrant 1.18](https://qdrant.tech/blog/qdrant-1.18.x/)
 
-## 6. <img src="logos/chroma.svg" height="22" alt=""> Chroma — Open source · Embedded
+## 6. <img src="images/chroma.svg" height="22" alt=""> Chroma — Open source · Embedded
 
 [trychroma.com](https://www.trychroma.com/)
 
@@ -184,7 +182,7 @@ small-to-mid-scale AI apps where developer speed matters most.
 · [Propel](https://www.trychroma.com/customers/propel-ai-case-study)
 · [Chroma research](https://research.trychroma.com/generative-benchmarking)
 
-## 7. <img src="logos/lancedb.svg" height="22" alt=""> LanceDB — Embedded · Multimodal lakehouse
+## 7. <img src="images/lancedb.svg" height="22" alt=""> LanceDB — Embedded · Multimodal lakehouse
 
 [lancedb.com](https://lancedb.com/)
 
@@ -212,7 +210,7 @@ page), Metagenomi (1B+ protein embeddings on S3), CodeRabbit.
 · [10B-scale search](https://www.lancedb.com/blog/how-lancedb-accelerates-vector-search-at-10-billion-scale)
 · [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/a-scalable-elastic-database-and-search-solution-for-1b-vectors-built-on-lancedb-and-amazon-s3/)
 
-## 8. <img src="logos/zvec.svg" height="22" alt=""> Zvec — Open source · Embedded (Alibaba)
+## 8. <img src="images/zvec.svg" height="22" alt=""> Zvec — Open source · Embedded (Alibaba)
 
 [zvec.org](https://zvec.org/en/)
 
@@ -244,7 +242,7 @@ external production users documented yet.
 [Hacker News](https://news.ycombinator.com/item?id=47000535) ·
 [trendshift](https://trendshift.io/repositories/20830)
 
-## 9. <img src="logos/pgvector.svg" height="22" alt=""> pgvector — PostgreSQL extension
+## 9. <img src="images/pgvector.svg" height="22" alt=""> pgvector — PostgreSQL extension
 
 [github.com/pgvector/pgvector](https://github.com/pgvector/pgvector)
 
@@ -272,7 +270,7 @@ PostgreSQL).
 · [AWS blog](https://aws.amazon.com/blogs/database/running-pgvector-in-production-on-amazon-aurora-postgresql/)
 · [pgvectorscale](https://github.com/timescale/pgvectorscale)
 
-## 10. <img src="logos/elasticsearch.svg" height="22" alt=""> Elasticsearch — Lucene · Hybrid search
+## 10. <img src="images/elasticsearch.svg" height="22" alt=""> Elasticsearch — Lucene · Hybrid search
 
 [elastic.co/elasticsearch](https://www.elastic.co/elasticsearch)
 
@@ -297,7 +295,7 @@ hybrid ranking over large heterogeneous corpora.
 · [Cisco via SiliconANGLE](https://siliconangle.com/2023/08/31/revolutionizing-enterprise-search-elasticsearch-cisco-harness-generative-ai-googlecloudnext/)
 · [DiskBBQ in Elasticsearch 9.4](https://www.elastic.co/search-labs/blog/vector-search-diskbbq-simd-block-scoring)
 
-## 11. <img src="logos/opensearch.svg" height="22" alt=""> OpenSearch — Open source · Linux Foundation
+## 11. <img src="images/opensearch.svg" height="22" alt=""> OpenSearch — Open source · Linux Foundation
 
 [opensearch.org](https://opensearch.org/)
 
@@ -323,7 +321,7 @@ deployments via OpenSearch Service.
 · [AWS GPU-accelerated builds](https://aws.amazon.com/blogs/big-data/build-billion-scale-vector-databases-in-under-an-hour-with-gpu-acceleration-on-amazon-opensearch-service/)
 · [OpenSearch 3.7](https://opensearch.org/blog/explore-opensearch-3-7/)
 
-## 12. <img src="logos/mongodb.svg" height="22" alt=""> MongoDB Vector Search — Document DB + vectors
+## 12. <img src="images/mongodb.svg" height="22" alt=""> MongoDB Vector Search — Document DB + vectors
 
 [mongodb.com/products/platform/atlas-vector-search](https://www.mongodb.com/products/platform/atlas-vector-search)
 
@@ -349,7 +347,7 @@ recommendations), Novo Nordisk (NovoScribe clinical report generation), Okta
 · [Okta](https://www.mongodb.com/solutions/customer-case-studies/okta)
 · [June 2026 product announcement](https://www.mongodb.com/company/newsroom/press-releases/mongodb-delivers-accurate-ai-retrieval-wherever-enterprise-data-lives)
 
-## 13. <img src="logos/redis.svg" height="22" alt=""> Redis Vector Search — Memory-first · Real-time
+## 13. <img src="images/redis.svg" height="22" alt=""> Redis Vector Search — Memory-first · Real-time
 
 [redis.io/search](https://redis.io/search/)
 
@@ -375,7 +373,7 @@ vector-search case studies; Redis-the-cache is, of course, ubiquitous.
 · [Docugami](https://redis.io/customers/docugami/)
 · [2026 vector-index guide](https://redis.io/blog/vector-indexes-in-redis/)
 
-## 14. <img src="logos/vespa.svg" height="22" alt=""> Vespa — AI search & serving platform
+## 14. <img src="images/vespa.svg" height="22" alt=""> Vespa — AI search & serving platform
 
 [vespa.ai](https://vespa.ai/)
 
@@ -400,7 +398,7 @@ personalization, 600M+ MAU), Yahoo (~150 apps, ~1B users, ~800K QPS), Vinted
 [vespa.ai/perplexity](https://vespa.ai/perplexity/)
 · [vespa.ai/case-studies](https://vespa.ai/case-studies/)
 
-## 15. <img src="logos/surrealdb.svg" height="22" alt=""> SurrealDB — Multi-model · Rust · AI-native
+## 15. <img src="images/surrealdb.svg" height="22" alt=""> SurrealDB — Multi-model · Rust · AI-native
 
 [surrealdb.com](https://surrealdb.com/)
 
@@ -439,16 +437,14 @@ standalone entries.
 
 **Marqo, Vald** — no meaningful 2026 growth signals.
 
-**ClickHouse, Couchbase, [HCL Informix VectorBlade](
-https://www.actian.com/blog/product-launches/introducing-native-vector-search-with-hcl-informix-vectorblade/
+**ClickHouse, Couchbase, [HCL Informix VectorBlade](https://www.actian.com/blog/product-launches/introducing-native-vector-search-with-hcl-informix-vectorblade/
 )** — vector search is a feature of a broader database rather than a headline
 capability.
 
 **Azure AI Search, Vertex AI Vector Search** — steady cloud-incumbent adoption
 but no distinct growth story.
 
-**Actian VectorAI DB** — a notable [April 2026 launch](
-https://www.actian.com/company/press-releases/actian-launches-vectorai-db-with-22x-faster-vector-search-for-production-ai-anywhere-including-the-edge/
+**Actian VectorAI DB** — a notable [April 2026 launch](https://www.actian.com/company/press-releases/actian-launches-vectorai-db-with-22x-faster-vector-search-for-production-ai-anywhere-including-the-edge/
 ) aimed at regulated, disconnected, and edge deployments, but too new to meet
 the list's documented production-adoption criterion.
 
