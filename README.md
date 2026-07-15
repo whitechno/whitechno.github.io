@@ -12,7 +12,7 @@ Create a folder per post — date path plus a title slug — with images alongsi
 
 ```
 blog/YYYY/MM/DD/post-title-slug/
-├── index.md      # front matter: layout: post, title, date
+├── index.md      # front matter: layout: post, title, date, description
 └── (images/SVGs, referenced by relative path)
 ```
 
@@ -26,11 +26,14 @@ Front matter:
 layout: post
 title: "Post Title"
 date: YYYY-MM-DD
+description: One plain-text sentence on what the post covers.
 ---
 ```
 
 Any page under `blog/` with a `date` appears automatically in the post list
-on the landing page.
+on the landing page. The `description` becomes the page's HTML meta
+description — the snippet search results and link previews show under the
+title; without it the page falls back to the generic site-wide description.
 
 Site maintenance — design doc, post-import tooling, instructions — lives in
 the separate private repo `whitechno.github.io.dev`.
