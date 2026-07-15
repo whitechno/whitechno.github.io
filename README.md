@@ -31,9 +31,10 @@ description: One plain-text sentence on what the post covers.
 ```
 
 Any page under `blog/` with a `date` appears automatically in the post list
-on the landing page. The `description` becomes the page's HTML meta
-description — the snippet search results and link previews show under the
-title; without it the page falls back to the generic site-wide description.
+on the landing page and in the Atom feed at `/feed.xml`. The `description`
+becomes the page's HTML meta description — the snippet search results and
+link previews show under the title — and the feed entry's summary; without
+it the page falls back to the generic site-wide description.
 
 Site maintenance — design doc, post-import tooling, instructions — lives in
 the separate private repo `whitechno.github.io.dev`.
